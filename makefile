@@ -8,8 +8,8 @@ build-stamp: stage-stamp
 	(cd $(pq_module_name) && \
 		$(MAKE) && \
 		$(MAKE) check && \
-		$(MAKE) install DESTDIR=$(stage_dir)) && \
-	touch $@
+		$(MAKE) install DESTDIR=$(stage_dir) \
+	) && touch $@
 
 stage-stamp: configure-stamp
 
