@@ -24,3 +24,4 @@ patch-stamp: unpack-stamp
 unpack: unpack-stamp
 unpack-stamp:
 	tar jxf $(source_dir)/$(pq_module_file) && touch $@
+
