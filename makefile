@@ -1,7 +1,7 @@
 include $(PQ_FACTORY)/factory.mk
 
-pq_module_name := gmp-6.0.0
-pq_module_file := $(pq_module_name)a.tar.bz2
+pq_module_name := gmp-6.1.1
+pq_module_file := $(pq_module_name).tar.bz2
 
 build-stamp: stage-stamp
 	$(MAKE) -C $(pq_module_name)
